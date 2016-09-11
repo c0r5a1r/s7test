@@ -12,7 +12,10 @@ class Code {
         do {
             $codes = array_merge($codes, self::_generateRandom($size));
             $codesString = implode(',', $codes);
-            $result = $db->query("SELECT f_code FROM codes_testexercise WHERE f_code IN ($codesString)");
+
+            $sql1 = "SELECT f_code FROM codes_testexercise WHERE f_code IN (?)";
+            $result = $db->prepare($sql1);
+
             $result = $result->fetchAll();;
             $codes = array_diff($codes, $result);
             $size = $size - count($codes);
