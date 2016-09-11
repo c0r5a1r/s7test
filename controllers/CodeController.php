@@ -6,7 +6,7 @@ class CodeController {
 
     function actionOpcja1() {
         $codes = array();
-        $codes = Code::putCodesIntoDB();
+        $codes = Code::setCodes();
 //        echo 'hi from controller action1';
         print_r($codes);
     }
