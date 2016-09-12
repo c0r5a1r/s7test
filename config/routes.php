@@ -1,6 +1,6 @@
 <?php
  return array(
-        'code/opcja1' => 'code/opcja1',
-        'code/opcja2' => 'code/opcja2',
-        'code/opcja3' => 'code/opcja3'
+        'code/1' => 'code/opcja1',
+        'code/2' => 'code/opcja2',
+        'code/3' => 'code/opcja3'
     );
