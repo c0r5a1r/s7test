@@ -68,10 +68,9 @@ class Code {
                 $result->execute(array($value));
             }
             $result = $result->fetchAll(PDO::FETCH_ASSOC);
-            return $result;
+            return $codesInBase;
         } else {
-            echo 'iout';
-            return ;
+
         }
 
     }

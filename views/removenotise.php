@@ -1,7 +1,7 @@
 <div>
     <?php
         foreach ($data as $value){
-            echo $value.'  does NOT exist ';
+            echo $value.'  are deleted'. '<br/>';
         }
     ?>
 </div>
